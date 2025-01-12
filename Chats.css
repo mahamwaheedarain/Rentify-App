@@ -1,0 +1,102 @@
+/* /src/styles/Chats.css */
+.chats-container {
+    padding: 30px;
+    background-color: #1a1a1a;
+    color: #f4f4f4;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .chats-container h1 {
+    font-size: 3em;
+    font-weight: 700;
+    color: #ffcc00; /* Bright yellow for the header */
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .chats-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .chat-item {
+    background-color: #2c2c2c; /* Dark background for each chat item */
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .chat-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .product-id {
+    font-weight: bold;
+    color: #ffcc00; /* Yellow product ID */
+  }
+  
+  .timestamp {
+    font-size: 0.9rem;
+    color: #888; /* Grey for the timestamp */
+  }
+  
+  .chat-participants {
+    margin-bottom: 15px;
+  }
+  
+  .chat-participants ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .chat-participants li {
+    font-size: 1rem;
+    color: #f4f4f4;
+    margin-bottom: 5px;
+  }
+  
+  .chat-actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .view-chat-btn {
+    background-color: #ffcc00; /* Yellow button */
+    color: #1a1a1a;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-chat-btn:hover {
+    background-color: #e6b800; /* Slightly darker yellow on hover */
+  }
+  
+  .chat-item:hover {
+    background-color: #444; /* Darker hover effect for each chat */
+  }
+  
+  @media (max-width: 768px) {
+    .chats-container {
+      padding: 20px;
+    }
+  
+    .chats-list {
+      font-size: 0.9em;
+    }
+  
+    .chat-item {
+      padding: 12px;
+    }
+  
+    .view-chat-btn {
+      padding: 8px 16px;
+    }
+  }
+  

@@ -1,0 +1,178 @@
+/* --- Global Styles --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #121212;
+  color: #f4f4f4;
+}
+
+h1 {
+  color: #ffcc00;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* --- Form Styles --- */
+.add-user-form {
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #1a1a1a; /* Matches header and footer */
+  color: #f4f4f4; /* Light text */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+}
+
+.add-user-form h2 {
+  text-align: center;
+  color: #ffcc00;
+  margin-bottom: 15px;
+}
+
+.add-user-form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #444; /* Matches dark theme */
+  border-radius: 4px;
+  background-color: #2c2c2c; /* Matches table row hover */
+  color: #f4f4f4; /* Light text */
+}
+
+.add-user-form input::placeholder {
+  color: #aaa;
+}
+
+.add-btn {
+  background-color: #ffcc00; /* Green button */
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #45a049; /* Darker green hover */
+}
+
+/* --- Button Styles --- */
+.delete-btn, .verify-btn, .edit-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+.delete-btn:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(231, 76, 60, 0.7);
+}
+
+.verify-btn {
+  background-color: #f39c12; /* Yellowish color for verify */
+  color: white;
+}
+
+.verify-btn:hover {
+  background-color: #e67e22; /* Darker yellow on hover */
+}
+
+.verify-btn:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(241, 196, 15, 0.7);
+}
+
+.edit-btn {
+  background-color: #3498db; /* Blue color for edit */
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #2980b9; /* Darker blue hover */
+}
+
+.edit-btn:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.7);
+}
+
+/* --- Table Styles --- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: #2c2c2c;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  font-size: 1rem;
+}
+
+th {
+  background-color: #333;
+  color: #ffcc00;
+}
+
+td {
+  border-bottom: 1px solid #444;
+}
+
+tr:hover {
+  background-color: #444;
+}
+
+/* --- Header and Footer Styles --- */
+header, footer {
+  background-color: #1a1a1a;
+  color: #ffcc00;
+  padding: 20px;
+  text-align: center;
+}
+
+/* --- Media Query for Responsive Design --- */
+@media (max-width: 768px) {
+  .add-user-form {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  th, td {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .add-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
